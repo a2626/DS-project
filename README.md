@@ -24,11 +24,15 @@ Receiver replies with:
 No reply if the authentication succeeded.
 If anything other than authentication succeeded, then the connection is closed immediately after sending the response.
 
+
+
 2.INVALID_MESSAGE
 A general message used as a reply if there is anything incorrect about the message that was received. This can be used by both clients and servers.
 example:
    "command" : "INVALID_MESSAGE",
    "info" : "the received message did not contain a command"
+
+
 
    
 3.LOGIN
@@ -39,6 +43,9 @@ example:
     "username" : "ABC",
      "secret" : 
     }
+	
+	
+	
 4.ACTIVITY_MESSAGE
 Sent from client to server when publishing an activity object.
 example:
@@ -48,6 +55,9 @@ example:
      "secret" : ,
      "activity" :"..."
     }
+	
+	
+	
 5.REGISTER
 Sent from client to server when the client wishes to register a new username.
 example:
