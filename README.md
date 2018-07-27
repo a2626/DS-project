@@ -28,7 +28,6 @@ Receiver replies with:
 	<li>INVALID_MESSAGE if anything is incorrect about the message, or if the server had already successfully authenticated</li>
 	<li>No reply if the authentication succeeded.</li>
 </ul>
-<br>
 If anything other than authentication succeeded, then the connection is closed immediately after sending the response.
 
 
